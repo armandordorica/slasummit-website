@@ -606,13 +606,13 @@ p{
 .submit-btn:focus, 
 .submit-btn:visited {
     background-color: transparent !important;
-    border: 1px solid #129CF3 !important; 
+    border: 1px solid #cc0000 !important; 
     border-radius: 4px !important; 
     width: 100% !important; 
     height: 50px !important; 
     text-transform: uppercase !important;
     font-size: 18px !important; 
-    color: #129CF3 !important; 
+    color: #cc0000 !important; 
     outline: 0px !important; 
     transition: all 1s !important; 
     -o-transition: all 1s !important; 
@@ -621,9 +621,9 @@ p{
 }
 
 .submit-btn:hover {
-    background-color: #129CF3 !important; 
+    background-color: #cc0000 !important; 
     color: #fff !important; 
-    border-color: #129CF3; 
+    border-color: #cc0000; 
 }
 
 .social-icons{
@@ -661,8 +661,8 @@ p{
 }
 
 .social-icons ul li a:hover{
-    background-color: #129CF3;
-    border: 1px solid #129CF3;
+    background-color: #cc0000;
+    border: 1px solid #cc0000;
     color: #fff; 
 }
 
@@ -675,7 +675,7 @@ p{
     background-color: #1a1a1a; 
     padding-bottom: 35px; 
     padding-top: 35px; 
-    border-bottom: 3px solid #129CF3; 
+    border-bottom: 3px solid #cc0000; 
 }
 
 #copyright{
@@ -691,7 +691,7 @@ p{
 
 #copyright p a{
     text-decoration: none; 
-    color: #129CF3; 
+    color: #e60000; 
 }
 
 .scroll-top{
@@ -699,7 +699,7 @@ p{
 }
 
 .scroll-top a{
-    background-color: #129CF3; 
+    background-color: #cc0000; 
     padding: 25px; 
 }
 
