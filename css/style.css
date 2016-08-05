@@ -277,7 +277,7 @@ p{
 
 /*============== Testimonials  ================*/ 
 .testimonial{
-    background-image: url("../images/testimonial-bg.jpg");
+    background-image: url("../images/textile-pattern.jpg");
     background-attachment: fixed; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,8 +299,8 @@ p{
 
 /*Adding a border frame to the images inside the carousel */ 
 .carousel-inner .item img{
-    border: 2px solid #129CF3; 
-    border-radius: 50%; 
+    border: 2px solid #cc0000; 
+/*    border-radius: 50%; */
     padding: 3px; 
 }
 
@@ -309,7 +309,7 @@ p{
 }
 
 .testimonial-caption h2{
-    color: #129CF3; 
+    color: #cc0000; 
     text-transform: uppercase; 
     font-weight: 900; 
     font-size: 30px; 
@@ -317,7 +317,7 @@ p{
 }
 
 .testimonial-caption h4{
-    color: #129CF3; 
+    color: #cc0000; 
 }
 
 .testimonial-caption h4 span{ 
