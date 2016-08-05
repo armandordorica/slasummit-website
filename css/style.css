@@ -429,8 +429,8 @@ p{
 .btn-purchase-now:focus,
 .btn-purchase-now:visited
 {
-    background-color: #129CF3; 
-    border: 1px solid #129CF3;
+    background-color: #cc0000; 
+    border: 1px solid #cc0000;
     color: #fff; 
     border-radius: 3px; 
     padding: 15px 35px; 
@@ -442,13 +442,13 @@ p{
 }
 
 .btn-purchase-now:hover{
-    background-color: #1274B1;
-    border-color: #316B90;
+    background-color: #ff0000;
+    border-color: #ff0000;
 }
 
 /*============== Counter ================*/ 
 .counter{
-    background-image: url("../images/counter-bg.jpg");
+    background-image: url("../images/people-pattern.jpg");
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     background-size: cover;
@@ -465,7 +465,7 @@ p{
 }
 
 .counter-item i{
-    color: #129CF3; 
+    color: #cc0000; 
     font-size: 60px; 
 }
 
