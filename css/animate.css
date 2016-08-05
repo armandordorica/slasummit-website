@@ -1218,6 +1218,7 @@
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
+    -webkit-animation-duration: 10s;
   }
 
   to {
