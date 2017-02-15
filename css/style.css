@@ -1,12 +1,19 @@
-* {
-    margin: 0; 
-    padding: 0; 
-}
+
 
 body{ 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    -webkit-font-family:'Helvetica', sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
+    color: #0B4F6C;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 100% 100%;
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    /*Webkit includes both chrome and safari browsers*/ 
+    -webkit-background-size: cover; 
 }
 
 p{
@@ -15,15 +22,19 @@ p{
 }
 
 /*=========== Generic CSS ==============*/
+.container {
+    padding: 40px 40px;
+}
+
 .section-title{
-    padding-top: 90px; 
+    padding-top: 50px; 
     padding-bottom: 50px; 
 }
 
 .section-title h2 {
     position: relative;
     text-align: center; 
-    color: #333; 
+    color: #0B4F6C; 
     font-size: 30px; 
     font-weight: 400; 
     text-transform: uppercase;
@@ -36,21 +47,126 @@ p{
     left: 50%; 
     width: 60px; 
     height: 1px; 
-    background-color: #e60000; 
+    background-color: #cc0000; 
     margin-left: -30px; 
+    color: #0B4F6C;
 }
 .section-title p{
-    color: #333; 
+    color: #0B4F6C; 
     font-size: 18px; 
-    line-height: 28px; 
+    line-height: 20px; 
     font-weight: 300; 
     text-align: center;
     margin-top: 45px;
 }
 
-/* ====== Navigation ========= */
+
+.btn-success,
+.btn-success:active
+.btn-success:focus, 
+.btn-success:visited {
+    background-color: transparent !important;
+    border: 1px solid #48BEFF !important; 
+    border-radius: 4px !important; 
+    width: 100% !important; 
+    height: 50px !important; 
+    text-transform: uppercase !important;
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 18px !important; 
+    color: #48BEFF !important; 
+    outline: 0px !important; 
+    transition: all 1s; 
+    -o-transition: all 1s; 
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.btn-success:hover {
+    background-color: #48BEFF !important;
+    color: #fff !important;
+    border-color: #48BEFF !important;
+}
+
+.btn-danger,
+.btn-danger:active
+.btn-danger:focus, 
+.btn-danger:visited {
+    background-color: transparent !important;
+    border: 1px solid #A50000 !important; 
+    border-radius: 4px !important; 
+    width: 20% !important; 
+    height: 30px !important; 
+    text-transform: uppercase !important;
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 12px !important; 
+    color: #A50000 !important; 
+    outline: 0px !important; 
+    margin-right: 15px !important;
+    transition: all 1s; 
+    -o-transition: all 1s; 
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.btn-danger:hover {
+    background-color: #A50000 !important;
+    color: #fff !important;
+    border-color: #A50000 !important;
+}
+
+.btn-info,
+.btn-info:active
+.btn-info:focus, 
+.btn-info:visited {
+    background-color: transparent !important;
+    border: 1px solid #48BEFF !important; 
+    border-radius: 4px !important; 
+    width: 40% !important; 
+    height: 50px !important; 
+    text-transform: uppercase !important;
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 18px !important; 
+    color: #48BEFF !important; 
+    outline: 0px !important; 
+    transition: all 1s; 
+    -o-transition: all 1s; 
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+/*    background-color: transparent !important;
+    border: 1px solid #48BEFF !important; 
+    border-radius: 4px !important; 
+    width: 100% !important; 
+    height: 50px !important; 
+    text-transform: uppercase !important;
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 18px !important; 
+    color: #48BEFF !important; 
+    outline: 0px !important; 
+    transition: all 1s; 
+    -o-transition: all 1s; 
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}*/
+
+.btn-info:hover {
+    background-color: #48BEFF !important;
+    color: #fff !important;
+    border-color: #48BEFF !important;
+}
+/* ====== Navigation ========= */ 
+.navbar{
+    margin-bottom: 0;
+    background-color: white;
+    border: 0 !important;
+    font-size: 10px !important;
+    font-weight: bold !important; 
+    letter-spacing: 4px;
+    opacity: 0.8 !important;
+}
 .navbar-default{
-    background-color: transparent ; 
+    background-color: white; 
     border-color: #444 !important; 
     z-index: 110 !important;
     transition: all 1s !important; 
@@ -60,8 +176,10 @@ p{
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #A9ADB0 !important; 
-    font-family: "Raleway", sans-serif; 
+    color: #A50000 !important; 
+    font-family: "Helvetica", sans-serif;
+    font-weight: 120;
+    font-size: 10px;
     transition: all 1s !important; 
     -o-transition: all 1s !important; 
     -moz-transition: all 1s !important;
@@ -69,17 +187,21 @@ p{
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-    color: #e60000 !important ;
+    color: #FFFFFF !important ;
     background-color:transparent; 
 }
 
 .navbar-default .navbar-nav > li > a:focus{
-    color: #e60000 !important;
+    color: #FFFFFF !important;
     background-color:transparent; 
 }
 
 .navbar-brand{
-    padding: 9px 15px !important; 
+    padding: 15px 15px !important; 
+    font-family: "helvetica", sans-serif;
+    color: #A50000 !important;
+    font-weight: 100;
+    font-size: 20px !important;
 }
 
 .navbar-brand img{ 
@@ -92,19 +214,32 @@ p{
 .navbar-default .navbar-nav > .active>a,
 .navbar-default .navbar-nav > .active>a:hover, 
 .navbar-default .navbar-nav > .active>a:focus,
+.navbar-default .navbar-nav > .active>a:visited
 {
 
-    background-color:transparent !important;
-    color: #e60000 !important; 
+    color: #A50000 !important; 
 
 }
+.dropdown .dropdown-menu > li > a{
+    color: #A50000 !important;
+    font-family: "helvetica", sans-serif !important;
+    font-weight: 120;
+    font-size: 10px;
+}
+
+.navbulb {
+    margin: -10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /* ====== Header ========= */ 
-.header { 
+.home { 
     background-image: url("../images/quechua-kids.jpg"); 
     /*background attachment describes whether the image should scroll or be fixed*/ 
-    background-attachment: fixed;
+    background-attachment: fixed-top;
     background-repeat: no-repeat;
-    background-position: 50% 50%; 
+    background-position: center 100% 100%;
     /*make sure that the background size will only cover the screen size*/ 
     background-size: cover; 
     /*prefix for mozilla browser*/
@@ -116,11 +251,11 @@ p{
 }
 
 /*This adds like a filter on top of the background image*/ 
-.header-overlay{
+.home-overlay{
     background-color: rgba(31, 31, 31, 0.75); 
 }
 
-.header-iphone img { 
+.home-iphone img { 
     width: 100%; 
 }
 
@@ -128,7 +263,7 @@ p{
     padding-bottom: 50px; 
 }
 
-.header-text h1{ 
+.home-text h1{ 
     color: #fff; 
     font-size: 35px; 
     font-weight: 300; 
@@ -137,93 +272,31 @@ p{
     text-transform: uppercase; 
 }
 
-.header-text p{ 
+.home-text p{ 
     color: #fff; 
     font-size: 17px; 
     font-weight: 300; 
     line-height: 28px; 
 }
 
-.header-btns{
-    margin-top: 90px; 
-    margin-bottom: 50px; 
-}
-
-.btn-download,
-.btn-download:focus,
-.btn-download:active, 
-.btn-download:visited
-{
-    background: transparent; 
-    border-color: #e60000; 
-    padding-top: 10px; 
-    padding-bottom: 10px; 
-    padding-left: 30px;
-    padding-right: 30px; 
-    font-size: 19px;
-    text-transform: uppercase; 
-    border-radius: 3px; 
-    transition: all 1s; 
-    -webkit-transition: all 1s; 
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-}
-
-
-.btn-download:hover {
-    background-color: #e60000; 
-    color: #fff; 
-}
-
-.btn-tour, 
-.btn-tour:focus,
-.btn-tour:active, 
-.btn-tour:visited{
-    color: #A9ADB0; 
-    margin-left: 20px; 
-    text-transform: uppercase; 
-    font-size: 19px;
-    font-weight: 500; 
-    background: transparent; 
-    transition: all 1s;
-    -webkit-transition: all 1s; 
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-}
-
-.btn-tour:hover{
-    color: fff; 
-}
-
-.btn-tour i {
-    font-size: 20px; 
-    padding-left: 5px; 
-    color: #cc0000; 
-}
-
-
-
 /*============= ABOUT US ====================*/
 .choose-us-wrapper{
-    padding-top: 50px; 
-    padding-bottom: 80px;
+    padding-top: 50px;     
 }
 
 
 .about-iphone img{
     margin-top: 8px; 
+    margin-bottom: 8px;
 }
 
-.choose-us-title{
-    padding-bottom: 50px; 
-    
-}
 .choose-us-title h2{
     text-transform: uppercase;
-    font-weight: 800; 
+    font-weight: 400; 
     font-size: 30px; 
     line-height: 37px; 
     position: relative; 
+    color: #0B4F6C; 
 }
 
 .choose-us-title h2:after{
@@ -234,18 +307,25 @@ p{
     width: 70px; 
     height: 1px; 
     background-color: #cc0000; 
+    color: #0B4F6C !important; 
 }
 
+
 .choose-us-title p{
+    color: #0B4F6C !important; 
+    font-size: 18px; 
+    line-height: 20px; 
+    font-weight: 300; 
     margin-top: 40px;
-    font-size: 19px; 
     line-height: 24px; 
+    font-family: "Helvetica Neue", Helvetica, "avenir-next";
 }
 
 .choose-us-item{
     position: relative; 
     padding-bottom: 4px; 
-    padding-left: 80px;
+    padding-left: 90px;
+    color: #48BEFF;
 }
 
 .choose-us-item div{
@@ -256,7 +336,7 @@ p{
 
 .choose-us-item div i{
     font-size: 55px; 
-    color: #e60000; 
+    color: #A50000 !important; 
     transition: all 1s; 
     -webkit-transition: all 1s;
     -o-transition: all 1s;
@@ -264,20 +344,331 @@ p{
 }
 
 .choose-us-item h3{
-    color: #343434;
+    color: #48BEFF;
     text-transform: uppercase; 
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
+    color: #0B4F6C;
 }
 
 .choose-us-item p{
-    color: #727272; 
-    font-size: 15px; 
+    color: #0B4F6C; 
+    font-size: 16px; 
+    line-height: 28px; 
+    font-weight: 300; 
+    line-height: 24px; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.text-center {
+    color: #0B4F6C;
+}
+
+
+
+/*============== Counter ================*/ 
+.counter{
+    background-image: url("../images/parobambahouses.jpg");
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+
+.counter-overlay{
+    padding-top: 120px; 
+    padding-bottom: 120px; 
+    background: rgba(0,0,0, .4); 
+}
+
+.counter-item i{
+    color: #A50000; 
+    font-size: 60px; 
+}
+
+.counter-item h2{
+    font-family: "Source Sans Pro", sans-serif; 
+    color: #D7DADB;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 35px; 
+    margin-top: 15px; 
+    margin-bottom: 1px; 
+}
+
+.counter-item p{
+    color: #D7DADB;
+    font-size: 20px;
+    margin-top: 0px; 
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif; 
+}
+
+/*============== OUR GOALS ===============*/
+.OUR-GOALS {
+    background-color: #fff;
+}
+
+
+/*============== OUR INSPIRATION ===============*/
+.OUR-INSPIRATION{
+    background-color: #0B4F6C;
+}
+.ourinspiration p{
+    color: #fff !important;
+}
+.ourinspiration h2 {
+    color: #fff !important;
+}
+
+/*============= projects ============*/
+.PROJECTS{
+    background-color: #fff;
+}
+.project-title {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+
+.project-title h2 {
+    position: relative;
+    text-align: center; 
+    color: #0B4F6C; 
+    font-size: 30px; 
+    font-weight: 400; 
+    text-transform: uppercase;
+}
+
+.project-title h2:after{
+    content:""; 
+    position: absolute;
+    bottom: -20px; 
+    left: 50%; 
+    width: 60px; 
+    height: 1px; 
+    background-color: #cc0000; 
+    margin-left: -30px; 
+}
+
+.project-titlepicture img{
+    padding: 50px;
+}
+
+.projectimg:hover {
+    opacity: 0.8;
+}
+
+/*===I want to make the image darken when you hover over it ====*/
+
+/*============= events ==================*/
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: #48BEFF;
+}
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/*============= MEET THE TEAM ==================*/
+.MEET-THE-TEAM {
+    background-color: #fff;
+}
+
+/*============= Articles ============*/
+.articles {
+    background: #0B4F6C !important;
+}
+.readmorearticles{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    padding-top: 30px;
+    color: #fff;
+}
+
+.articles p{
+    color: #fff;
+}
+
+.articles h2 {
+    color: #fff;
+}
+.art {
+    color: #fff;
+}
+
+.art h3{
+    color: #48BEFF;
+}
 /*============== Testimonials  ================*/ 
-.testimonial{
-    background-image: url("../images/textile-pattern.jpg");
+
+.TESTIMONIALS{
+    background-image: url("../images/parobamba2.jpg");
     background-attachment: fixed; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,8 +680,6 @@ p{
 
 .testimonial-overlay{
     background-color: rgba(31, 31, 31, .75);
-    padding-top: 80px; 
-    padding-bottom: 80px; 
 }
 
 .carousel-indicators{
@@ -300,7 +689,10 @@ p{
 /*Adding a border frame to the images inside the carousel */ 
 .carousel-inner .item img{
     border: 2px solid #cc0000; 
-/*    border-radius: 50%; */
+  /*  border-radius: 50%; */
+    width: auto;
+    height: 130px !important;
+    max-height: 225px;
     padding: 3px; 
 }
 
@@ -330,96 +722,20 @@ p{
     color: #D8D8D8;
     font-size: 18px;
     line-height: 27px; 
-    padding-top: 50px; 
+    padding-top: 20px; 
 }
-
 /*============== Sponsors and partners ================*/ 
-.features-inner-wrapper{
-    padding-top: 30px; 
-    padding-bottom: 70px; 
-}
 
-.left-feature-item {
-    position: relative; 
-    padding-right: 90px; 
-    margin-bottom: 65px; 
-    text-align: right;
-    margin-top: 35px; 
-}
-
-.left-feature-item-icon{
-    position: absolute;
-    font-size: 40px; 
-    color: #129CF3; 
-    right: 0; 
-    top: -8px; 
-    width: 90px; 
-    height: 90px; 
-    text-align: center;
-}
-
-.left-feature-item h3{
-    text-transform: uppercase;
-    font-size: 25px; 
-    font-weight: 700; 
-    margin-bottom: 21px;
-    color: #333; 
-}
-
-.left-feature-item p{
-    color: #333; 
-    font-size: 16px; 
-    font-weight: 300; 
-    line-height: 25px; 
-}
-
-.feature-iphone img {
-    width: 100%; 
-}
-
-.right-feature-item {
-    position: relative; 
-    padding-left: 90px; 
-    margin-bottom: 65px; 
-    margin-top: 35px; 
-    text-align: left;
-}
-
-.right-feature-item-icon{
-    position: absolute;
-    font-size: 40px; 
-    color: #129CF3; 
-    left: 0; 
-    top: -8px; 
-    width: 90px; 
-    height: 90px; 
-    text-align: center;
-}
-
-.right-feature-item h3{
-    text-transform: uppercase;
-    font-size: 25px; 
-    font-weight: 700; 
-    margin-bottom: 21px;
-    color: #333; 
-}
-
-.right-feature-item p{
-    color: #333; 
-    font-size: 16px; 
-    font-weight: 300; 
-    line-height: 25px; 
-}
 
 /*============== Purchase Now ================*/ 
 .purchase-now{
-    background-color: #1a1a1a; 
+    background-color: #0B4F6C; 
     padding-top: 100px; 
     padding-bottom: 100px; 
 }
 
 .purchase-now p{
-    color: #dfdfdf; 
+    color: #fff; 
     font-size: 18px; 
     font-weight: 300; 
 }
@@ -429,8 +745,8 @@ p{
 .btn-purchase-now:focus,
 .btn-purchase-now:visited
 {
-    background-color: #cc0000; 
-    border: 1px solid #cc0000;
+    background-color: #48BEFF !important; 
+    border: 1px solid #48BEFF !important;
     color: #fff; 
     border-radius: 3px; 
     padding: 15px 35px; 
@@ -442,51 +758,11 @@ p{
 }
 
 .btn-purchase-now:hover{
-    background-color: #ff0000;
-    border-color: #ff0000;
+    background-color: #48BEFF;
+    border-color: #48BEFF;
 }
 
-/*============== Counter ================*/ 
-.counter{
-    background-image: url("../images/people-pattern.jpg");
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-position: 50% 50%;
-}
 
-.counter-overlay{
-    padding-top: 120px; 
-    padding-bottom: 120px; 
-    background: rgba(0,0,0, .4); 
-}
-
-.counter-item i{
-    color: #cc0000; 
-    font-size: 60px; 
-}
-
-.counter-item h2{
-    font-family: "Source Sans Pro", sans-serif; 
-    color: #D7DADB;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 35px; 
-    margin-top: 15px; 
-    margin-bottom: 1px; 
-}
-
-.counter-item p{
-    color: #D7DADB;
-    font-size: 20px;
-    margin-top: 0px; 
-    font-weight: 300;
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif; 
-}
 
 /*============== Download Now ================*/ 
 
@@ -536,7 +812,7 @@ p{
 }
 
 .available-on-item i{
-    color: #129CF3; 
+    color: #cc0000; 
     text-align: center; 
     opacity: 1;
     font-size: 40px; 
@@ -573,8 +849,32 @@ p{
     opacity: 1; 
 }
 
+/*============== Map ====================*/
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
 
 /*============== Contact Us ================*/ 
+.contact-us {
+    background-color: #fff;
+}
+
+.googleform {
+    align-items: center;
+}
+
 .contact-us-form .form-control{
     display: block; 
     width: 100%; 
@@ -583,7 +883,7 @@ p{
     font-size: 14px; 
     line-height: 21px; 
     color: #555; 
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #aeaeae; 
     border-radius: 3px;
     margin-bottom: 15px;
@@ -607,13 +907,13 @@ p{
 .submit-btn:focus, 
 .submit-btn:visited {
     background-color: transparent !important;
-    border: 1px solid #cc0000 !important; 
+    border: 1px solid #48BEFF !important; 
     border-radius: 4px !important; 
     width: 100% !important; 
     height: 50px !important; 
     text-transform: uppercase !important;
     font-size: 18px !important; 
-    color: #cc0000 !important; 
+    color: #48BEFF!important; 
     outline: 0px !important; 
     transition: all 1s !important; 
     -o-transition: all 1s !important; 
@@ -622,9 +922,9 @@ p{
 }
 
 .submit-btn:hover {
-    background-color: #cc0000 !important; 
+    background-color: #48BEFF !important; 
     color: #fff !important; 
-    border-color: #cc0000; 
+    border-color: #48BEFF; 
 }
 
 .social-icons{
@@ -649,12 +949,12 @@ p{
     text-decoration: none; 
     display: inline-block;
     text-align: center;
-    border: 1px solid #9d9d9d;
+    border: 1px solid #48BEFF;
     border-radius: 3px; 
     width: 45px;
     height: 45px; 
     line-height: 49px; 
-    color: #9d9d9d; 
+    color: #48BEFF; 
     transition: all 1s !important; 
     -o-transition: all 1s !important; 
     -moz-transition: all 1s !important;
@@ -662,8 +962,8 @@ p{
 }
 
 .social-icons ul li a:hover{
-    background-color: #cc0000;
-    border: 1px solid #cc0000;
+    background-color: #48BEFF;
+    border: 1px solid #48BEFF;
     color: #fff; 
 }
 
@@ -692,7 +992,7 @@ p{
 
 #copyright p a{
     text-decoration: none; 
-    color: #e60000; 
+    color: #cc0000; 
 }
 
 .scroll-top{
@@ -708,3 +1008,9 @@ p{
     color: #fff; 
     font-size: 25px; 
 }
+
+
+
+
+
+
